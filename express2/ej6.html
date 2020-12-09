@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html> 
+<head></head> 
+<body> 
+ <form name="datos"> 
+ <input type="text" id="txt1" value=0 /></br></br>  <input type="button" value="Nota final" id="bot_inicia" onclick="vernota(txt1.value)"/>  </form> 
+</body> 
+<script> 
+ vernota = (numero) => {  
+ let resultado = numero > 4 ? "Aprobado" : "Suspendido"
+ alert(resultado)
+ }
+ 
+ inicia = () => {  
+ const valor = Number(txt1.value)  
+ vernota(valor)  
+ }  
+ bot_inicia.addEventListener('click', inicia)    
+</script> 
+<div id="salida"></div>
+</html> 
+
+
+<!--comentario-->
+
+<!-- comentario2-->
